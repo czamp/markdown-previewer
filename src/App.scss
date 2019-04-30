@@ -1,0 +1,80 @@
+$basecolor: #93b7be;
+
+body {
+  background: lighten($basecolor, 30%) !important;
+  height: 100%;
+}
+
+textarea {
+  background: lighten($basecolor, 25%) !important;
+  font-size: 12px;
+  margin-bottom: -5px;
+  min-height: 200px;
+  outline: none;
+  padding-left: 5px;
+  padding-top: 5px;
+  resize: vertical;
+  width: 99%;
+}
+
+.editorWrapper {
+  margin: 2rem auto;
+  width: 800px;
+}
+
+.editorWrapper .segment {
+  background-color: lighten($basecolor, 25%) !important;
+}
+
+.hide {
+  display: none;
+}
+
+.maximized {
+  left: 2rem;
+  min-height: 96vh;
+  position: absolute;
+  width: 96vw;
+}
+
+.maximized textarea {
+  min-height: 95vh;
+}
+
+.previewWrapper {
+  margin: 2rem auto;
+  min-height: 200px;
+  width: 1000px;
+}
+
+.previewWrapper .segment {
+  background-color: lighten($basecolor, 25%) !important;
+}
+
+
+.toolbar {
+  background: darken($basecolor, 5%) !important;
+}
+
+@media screen and (max-width: 650px) {
+  body {
+    margin: 5px 0;
+  }
+  .editorWrapper {
+    width: 80vw;
+    margin: 0 auto;
+  }
+  .maximized {
+    width: 95%;
+    margin: auto;
+  }
+  .previewWrapper {
+    width: 95vw;
+    #preview {
+      width: 100%;
+      img {
+        height: 200px;
+      }
+    }
+  }
+}
