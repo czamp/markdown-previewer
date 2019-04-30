@@ -14,8 +14,7 @@ textarea {
   width: 99%; }
 
 .editorWrapper {
-  margin: 2rem auto;
-  width: 800px; }
+  margin: 2rem auto; }
 
 .editorWrapper .segment {
   background-color: #e3ecee !important; }
@@ -34,8 +33,7 @@ textarea {
 
 .previewWrapper {
   margin: 2rem auto;
-  min-height: 200px;
-  width: 1000px; }
+  min-height: 200px; }
 
 .previewWrapper .segment {
   background-color: #e3ecee !important; }

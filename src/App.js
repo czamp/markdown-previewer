@@ -7,7 +7,8 @@ import {
   Menu,
   Form,
   TextArea,
-  Icon
+  Icon,
+  Header
 } from "semantic-ui-react";
 import "./App.css";
 
@@ -51,6 +52,17 @@ class App extends React.Component {
   render() {
     return (
       <Container>
+        <Header
+          size="huge"
+          textAlign="center"
+          style={
+            !this.state.previewMaximized && !this.state.editorMaximized
+              ? { marginTop: "2rem" }
+              : { display: "none" }
+          }
+        >
+          React Markdown Previewer
+        </Header>
         <div
           className={`editorWrapper ${this.state.editorMaximized &&
             "maximized"} ${this.state.previewMaximized && "hide"}`}
@@ -77,6 +89,7 @@ class App extends React.Component {
           />
           <Preview markdown={this.state.markdown} />
         </div>
+        <p>Created by <a href="https://github.com/czamp" target="_blank" rel="noopener noreferrer">czamp</a>.</p>
       </Container>
     );
   }
